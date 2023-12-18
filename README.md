@@ -1,1 +1,44 @@
+# Sign-Up/Login API using Express.js and Mongoose
+
+## Overview
+
+This is a simple RESTful API built with Express.js and Mongoose for user sign-up and login functionality. It provides endpoints for user registration and login.
+
+## Features
+
+- User registration with name, email and password
+- User login with email and password
+- Mongoose for MongoDB integration
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js
+- MongoDB
+- MongoDB Compass
+- Postman
+
+## Dependencies
+- Express.js
+- Mongoose
+- Nodemon
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Fa-doon/SignUp-Login-Express-Mongoose.git
+
+2. API Endpoints
+  - `POST  /sign-up`
+  - `POST  /login`
+
+3. Error Handling:
+   
+   This Api returns the appropriate status codes and messages for invalid requests.
+
+## Resources
+- [Building a Simple Signup and Login System with Node.js, Express.js and MongoDB: A Step-by-Step Guide.](https://medium.com/towardsdev/building-a-simple-signup-and-login-system-with-node-js-99b2495ff244)
 
