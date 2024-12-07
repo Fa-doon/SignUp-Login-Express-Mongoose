@@ -23,6 +23,7 @@ Before you begin, ensure you have the following installed:
 - Express.js
 - Mongoose
 - Nodemon
+- bcrypt
 
 ## Getting Started
 
