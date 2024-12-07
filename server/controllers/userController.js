@@ -8,7 +8,6 @@ const registerUser = async (req, res) => {
       email: req.body.email,
       password: req.body.password,
     };
-    console.log(user);
 
     // Check if the user is already registered.
     const existingUser = await User.findOne({ email: user.email });
@@ -40,6 +39,7 @@ const registerUser = async (req, res) => {
   }
 };
 
+// Login user
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -49,21 +49,26 @@ const loginUser = async (req, res) => {
 
     if (!user) {
       return res.status(401).json({
-        message: "User not found",
+        message: "Email or password incorrect",
       });
     }
 
     // Check if the provided password matches the stored password
-    if (user.password === password) {
+    // Modified code
+
+    const isMatch = await user.comparePassword(password);
+
+    if (!isMatch) {
+      return res.status(401).json({
+        message: "Email or password incorrect",
+      });
+    } else {
       return res.status(200).json({
         message: "Login successful",
         user: {
           email: user.email,
         },
-      });
-    } else {
-      return res.status(401).json({
-        message: "Email or password incorrect",
+ 
       });
     }
   } catch (error) {
