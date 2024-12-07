@@ -35,13 +35,18 @@ Before you begin, ensure you have the following installed:
    ```bash
    npm install or yarn install
 
-3. API Endpoints
+3. Run your server
+   ```bash
+   npm run dev
+
+### API Endpoints
+
   - `POST  /sign-up`
   - `POST  /login`
 
-4. Error Handling:
+### Error Handling:
    
-   This Api returns the appropriate status codes and messages for invalid requests.
+This Api returns the appropriate status codes and messages for invalid requests.
 
 ## Resources
 - [Building a Simple Signup and Login System with Node.js, Express.js and MongoDB: A Step-by-Step Guide.](https://medium.com/towardsdev/building-a-simple-signup-and-login-system-with-node-js-99b2495ff244)
