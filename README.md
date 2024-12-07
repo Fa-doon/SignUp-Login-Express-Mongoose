@@ -31,11 +31,15 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/Fa-doon/SignUp-Login-Express-Mongoose.git
 
-2. API Endpoints
+2. Install packages
+   ```bash
+   npm install or yarn install
+
+3. API Endpoints
   - `POST  /sign-up`
   - `POST  /login`
 
-3. Error Handling:
+4. Error Handling:
    
    This Api returns the appropriate status codes and messages for invalid requests.
 
