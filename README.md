@@ -41,4 +41,5 @@ Before you begin, ensure you have the following installed:
 
 ## Resources
 - [Building a Simple Signup and Login System with Node.js, Express.js and MongoDB: A Step-by-Step Guide.](https://medium.com/towardsdev/building-a-simple-signup-and-login-system-with-node-js-99b2495ff244)
+- [Securing Passwords: How to Hash and Compare Passwords in Nodejs Using Bcrypt](https://medium.com/towardsdev/securing-passwords-how-to-hash-and-compare-passwords-in-nodejs-using-bcrypt-fb5f4945fc32)
 
