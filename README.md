@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed:
    ```bash
    npm run dev
 
-### API Endpoints
+### Endpoints
 
   - `POST  /sign-up`
   - `POST  /login`
